@@ -6,79 +6,96 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kalid Nadere Portfolio</title>
   <style>
-  body {
-    font-family: Arial, sans-serif;
+    body {
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       background-image: url('./Assets/images/1103970.jpg');
       background-size: cover;
       background-position: center;
-  } </style>
+    }
+  </style>
   <link rel="stylesheet" href="./Assets/style.css">
 </head>
 
 <body>
   <div id="header">
-      <div class="container">
-        <nav>
-          <img src="./Assets/images/1103970.jpg" class="logo">
-          <ul>
-            <!--   navigation   -->
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Education</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-       
-        <!--    introduction    -->
-        <div class="header-text">
-            <h1>Full-stack Developer</h1>
-            <h2>Hi, my name is <strong>Kalid Nadere</strong>, I'm from Australia
-            <br> and this is my Portfolio.</h2>
-            <img src="" alt="">
-        </div>
+    <div class="container">
+      <nav>
+        <img src="./Assets/images/1103970.jpg" class="logo">
+        <ul>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Education</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-text">
+        <h1><strong id="name">Kalid</strong>Nadere</h1>
+        <h2>Professional Portfolio<br> Full-Stack Developer</h2>
+        <img src="" alt="">
       </div>
+    </div>
   </div>
+
   <div id="about">
-      <div class="container">
-        <div class="row">
+    <div class="container">
+      <div class="row">
         <div class="about-col-1"></div>
-        
-        <!--   about me   -->
+
         <div class="about-col-2">
           <h1 class="sub-title">About Me</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Consequatur alias iusto maiores? Cupiditate tenetur quos
-            quae, beatae dignissimos, voluptas suscipit, excepturi
-            cumque corrupti tempora nisi. Cupiditate, quod a.
+          <p class="para-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur alias iusto
+            <br> maiores? Cupiditate tenetur quos quae, beatae dignissimos, voluptas suscipit,
+            <br> excepturi cumque corrupti tempora nisi. Cupiditate, quod a.
             Recusandae, ratione!</p>
-            <div class="tab-titles">
-              <p class="tab-links active-link">Skills</p>
-              <p class="tab-links">Education</p>
-              <p class="tab-links">Contact</p>
-            </div>
-            <div class="tab-contents">
-              <ul>
-                <li><span>HTML</span><br>Building Web Page</li>
-                <li><span>CSS</span><br>Designing Web Page</li>
-              </ul>
-            </div>
-            <div class="tab-contents">
-              <ul>
-                <li><span>Full-stack-Bootcamp</span><br>Uni. of Sydney</li>
-                <li><span>Year Completed</span><br>2023</li>
-              </ul>
-            </div>
-            <div class="tab-contents">
-              <ul>
-                <li><span>Mobile</span><br>0404000111</li>
-              </ul>
-            </div>
-        </div>
+            <br><br><br><br><br><br><br><br><br><br><br>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+            <p class="tab-links" onclick="opentab('contact')">Contact</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>HTML</span><br>Building Web Pages</li>
+              <li><span>CSS</span><br>Designing Web Pages</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>Full-stack Bootcamp</span><br>The University of Sydney</li>
+              <li><span>Year Completed</span><br>2023</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="contact">
+            <ul>
+              <li><span>Mobile</span><br>0404000111</li>
+              <li><span>Email</span><br>developer@gmail.com</li>
+            </ul>
+          </div>
         </div>
       </div>
-
+    </div>
   </div>
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("activelink");
+      document.getElementById(tabname).classList.add("active-tab");
+      // event.currentTarget.classList.add("active-link");
+    }
+  </script>
+
 </body>
 </html>
