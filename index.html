@@ -4,98 +4,71 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kalid Nadere Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-image: url('./Assets/images/1103970.jpg');
-      background-size: cover;
-      background-position: center;
-    }
-  </style>
+  <title>Document</title>
   <link rel="stylesheet" href="./Assets/style.css">
 </head>
-
 <body>
-  <div id="header">
-    <div class="container">
-      <nav>
-        <img src="./Assets/images/1103970.jpg" class="logo">
-        <ul>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Education</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+  <nav class="navbar">
+    <ul>
+      <li> <a href="#">About Me</a></li>
+      <li> <a href="#">Portfolio</a></li>
+      <li> <a href="#">Skills</a></li>
+      <li> <a href="#">Contact Me</a></li>
+    </ul>
+  </nav>
+  
+  <section id="home">
+    <div class="main">
+      <h1 class="headings"> I Am <br> Kalid Nadere</h1>
+      <button class="btn">
+        Hire me
+      </button>
+    </div>
+  </section>
 
-      <div class="header-text">
-        <h1><strong id="name">Kalid</strong>Nadere</h1>
-        <h2>Professional Portfolio<br> Full-Stack Developer</h2>
-        <img src="" alt="">
+  <section id="about">
+    <div id="pic">
+      <h1 class="headings">ABOUT ME</h1>
+      <div id="pic">
+      <img src="./Assets/images/bground.jpg" alt="">
+      <div id="intro">
+        <h2> KALID NADERE</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, 
+         adipisicing elit. Inventore, libero ipsa nobis
+        fugit, delectus animi laborum molestias accusamus
+         cumque laudantium vero! Esse atque magnam fugit!
+        </p>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div id="about">
-    <div class="container">
-      <div class="row">
-        <div class="about-col-1"></div>
+  <section id="portfolio">
+    <h1 class="headings"> PORTFOLIO</h1>
+    <div class="gallery">
+      <img src="./Assets/images/nightsky.jpg" alt="">
+      <img src="./Assets/images/pc.jpg" alt="">
+      <img src="./Assets/images/wallframes.jpg" alt="">
+    </div>
+  </section>
 
-        <div class="about-col-2">
-          <h1 class="sub-title">About Me</h1>
-          <p class="para-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur alias iusto
-            <br> maiores? Cupiditate tenetur quos quae, beatae dignissimos, voluptas suscipit,
-            <br> excepturi cumque corrupti tempora nisi. Cupiditate, quod a.
-            Recusandae, ratione!</p>
-            <br><br><br><br><br><br><br><br><br><br><br>
-          <div class="tab-titles">
-            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-            <p class="tab-links" onclick="opentab('education')">Education</p>
-            <p class="tab-links" onclick="opentab('contact')">Contact</p>
-          </div>
-          <div class="tab-contents active-tab" id="skills">
-            <ul>
-              <li><span>HTML</span><br>Building Web Pages</li>
-              <li><span>CSS</span><br>Designing Web Pages</li>
-            </ul>
-          </div>
-          <div class="tab-contents" id="education">
-            <ul>
-              <li><span>Full-stack Bootcamp</span><br>The University of Sydney</li>
-              <li><span>Year Completed</span><br>2023</li>
-            </ul>
-          </div>
-          <div class="tab-contents" id="contact">
-            <ul>
-              <li><span>Mobile</span><br>0404000111</li>
-              <li><span>Email</span><br>developer@gmail.com</li>
-            </ul>
-          </div>
-        </div>
+  <section id="services">
+    <h1 class="headings">SERVICES</h1>
+    <div class="row">
+      <div class="box">
+        <h1 class="headings">Website Developing</h1>
+        <p>https://kalidnadere.github.io/prework-study-guide/
+        </p>
+        <p>https://kalidnadere.github.io/Code-Refactoring-HTML-CSS/</p>
+      </div>
+      <div class="box">
+        <h1 class="headings">Cyber Security</h1>
+        <p>......LOADING......</p>
+      </div>
+      <div class="box">
+        <h1 class="headings">Full-stack Developer</h1>
+        <p>..........LOADING.........</p>
       </div>
     </div>
-  </div>
-
-  <script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-
-    function opentab(tabname) {
-      for (tablink of tablinks) {
-        tablink.classList.remove("active-link");
-      }
-
-      for (tabcontent of tabcontents) {
-        tabcontent.classList.remove("active-tab");
-      }
-      event.currentTarget.classList.add("activelink");
-      document.getElementById(tabname).classList.add("active-tab");
-      // event.currentTarget.classList.add("active-link");
-    }
-  </script>
-
+  </section>
 </body>
 </html>
