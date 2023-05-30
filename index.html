@@ -4,16 +4,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Kalid Nadere Portfolio</title>
   <link rel="stylesheet" href="./Assets/style.css">
+  <link rel="stylesheet" media="screen and (max-width:800px)" href="./Assets/tablet.css">
+  <link rel="stylesheet" media="screen and (max-width:530px)" href="./Assets/phone.css">
 </head>
 <body>
   <nav class="navbar">
     <ul>
-      <li> <a href="#">About Me</a></li>
-      <li> <a href="#">Portfolio</a></li>
-      <li> <a href="#">Skills</a></li>
-      <li> <a href="#">Contact Me</a></li>
+      <li> <a href="#home">About Me</a></li>
+      <li> <a href="#portfolio">Portfolio</a></li>
+      <li> <a href="#services">Services</a></li>
+      <li> <a href="#contact">Contact Me</a></li>
     </ul>
   </nav>
   
@@ -30,7 +32,7 @@
     <div id="pic">
       <h1 class="headings">ABOUT ME</h1>
       <div id="pic">
-      <img src="./Assets/images/bground.jpg" alt="">
+      <img src="./Assets/images/kn2.jpeg" alt="">
       <div id="intro">
         <h2> KALID NADERE</h2>
         <p>Lorem ipsum dolor sit amet consectetur, 
@@ -55,10 +57,15 @@
     <h1 class="headings">SERVICES</h1>
     <div class="row">
       <div class="box">
-        <h1 class="headings">Website Developing</h1>
-        <p>https://kalidnadere.github.io/prework-study-guide/
-        </p>
-        <p>https://kalidnadere.github.io/Code-Refactoring-HTML-CSS/</p>
+        <h1 class="headings">Website Development</h1>
+        <ul>
+          <li><a target="blank" href="https://kalidnadere.github.io/prework-study-guide/">
+            prework-study-guide webpage</a></li>
+            <br>
+            <li><a target="blank" href="https://kalidnadere.github.io/Code-Refactoring-HTML-CSS/#social-media-marketing">
+              Code refactoring webpage</a></li>
+        </ul>
+          
       </div>
       <div class="box">
         <h1 class="headings">Cyber Security</h1>
@@ -68,6 +75,23 @@
         <h1 class="headings">Full-stack Developer</h1>
         <p>..........LOADING.........</p>
       </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h1 class="headings">CONTACT</h1>
+    <form action="" class="form">
+      <input type="text" name="name" class="input"
+      placeholder="Enter Your Name">
+      <input type="email" name="email" class="input"
+      placeholder="Enter Your Email">
+      <textarea name="msg" id="msg" cols="30" rows="10"
+      placeholder="Enter Your Message"></textarea>
+      <input type="submit" value="SEND" id="send">
+
+    </form>
+    <div class="copyright">
+      <p>Copyright &copy Kalid. Made with <span>&hearts;</span></p>
     </div>
   </section>
 </body>
