@@ -17,7 +17,6 @@ repository.
 
 ## Screenshot of deployed webpage
 
-<img width="1456" alt="Webpage" src="https://github.com/KalidNadere/Kalid-Nadere-Portfolio/assets/131591052/dd7606aa-e5d5-4aeb-8c7a-c78fc3ec7d86">
 
 
 ## Licence
