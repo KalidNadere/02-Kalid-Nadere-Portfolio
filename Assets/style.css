@@ -100,7 +100,7 @@ box-sizing: border-box;
 padding: 20px;
 margin-bottom: 50px;
 background-color: rgb(157, 194, 210); 
-color: rgb(101, 107, 98);
+color: rgb(69, 79, 64);
 }
 #pic{
   display: flex;
@@ -115,7 +115,7 @@ color: rgb(101, 107, 98);
   flex-direction: column;
   text-align: justify;
   padding: 10px;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 #intro h2{
   font-size: 2rem;
