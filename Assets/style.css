@@ -47,8 +47,8 @@ html{
   height: 840px;
   justify-content: center;
   align-items: center;
-  color: rgb(51, 96, 121);
   font-style: italic;
+  color: rgba(236, 240, 244, 0.923);
 }
 #home::before{
   content: "";
@@ -81,7 +81,7 @@ html{
   border: 1px solid white;
   outline: none;
   transition: .6s ease;
-  font-size: 15px;
+  font-size: 18px;
   color: rgb(15, 71, 92);
 }
 .btn:hover{
