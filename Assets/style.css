@@ -249,3 +249,14 @@ box-sizing: border-box;
 span{
   color: rgb(220, 59, 59);
 }
+
+.contact-me {
+  font-size: 20px;
+  position: absolute;
+  left: 2%;
+  bottom: -225%;
+}
+.contact-me li a {
+  color: rgb(25, 47, 60);
+  font-size: 20px;
+}
