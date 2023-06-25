@@ -8,12 +8,12 @@ The intention of this project and this portfolio is to demonstrate, overtime, th
 
 
 ## Deployed Webpage URL link 
-https://kalidnadere.github.io/Kalid-Nadere-Portfolio/
+https://kalidnadere.github.io/02-Kalid-Nadere-Portfolio/
 
 
 
 ## Github URL link
-https://github.com/KalidNadere/Kalid-Nadere-Portfolio.git
+https://github.com/KalidNadere/02-Kalid-Nadere-Portfolio.git
 
 
 ## Screenshot of deployed webpage
