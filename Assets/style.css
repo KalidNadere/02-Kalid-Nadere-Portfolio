@@ -154,13 +154,14 @@ color: rgb(69, 79, 64);
   
   .image-label {
     position: absolute;
-    top: 50%;
+    top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    color: rgb(103, 99, 66);
     padding: 10px;
-    font-size: 16px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
   }
 
 /* services section */
@@ -251,12 +252,12 @@ span{
 }
 
 .contact-me {
-  font-size: 20px;
+  font-size: 25px;
   position: absolute;
   left: 2%;
-  bottom: -225%;
+  bottom: -180%;
 }
 .contact-me li a {
   color: rgb(25, 47, 60);
-  font-size: 20px;
+  font-size: 22px;
 }
